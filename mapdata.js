@@ -4,7 +4,7 @@ var simplemaps_worldmap_mapdata={
     width: "responsive", //'700' or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
-    popups: "on_click",
+    popups: "detect",
     
 
     //State defaults
@@ -324,7 +324,7 @@ var simplemaps_worldmap_mapdata={
     },
     IT: {
       name: "Italy",
-      description: "Number of heritage sites: 58\nFamous Sites:\n<img src=\"./colosseum.jpg\" />\nHistoric Centre of Rome\nThe World Heritage property encompasses the whole historic centre of Rome within the city walls at their widest extent in the 17th century, as well as the Basilica of St. Paul’s Outside the Walls. Founded on the banks of the Tiber river in 753 B.C., according to legend, by Romulus and Remus, Rome was first the centre of the Roman Republic, then of the Roman Empire, and in the fourth century, became the capital of the Christian world."
+      description: "Number of heritage sites: 58"
     },
     JM: {
       name: "Jamaica"
@@ -606,7 +606,16 @@ var simplemaps_worldmap_mapdata={
       name: "Zimbabwe"
     }
   },
-  locations: {},
+  locations: {
+    "0": {
+      lat: "41.9028",
+      lng: "12.4964",
+      name: "Rome",
+      hover_opacity: "0",
+      opacity: "0",
+      description: "Historic City of Rome. <img src=\"./colosseum.jpg\" /> The World Heritage property encompasses the whole historic centre of Rome within the city walls at their widest extent in the 17th century, as well as the Basilica of St. Paul’s Outside the Walls. Founded on the banks of the Tiber river in 753 B.C., according to legend, by Romulus and Remus, Rome was first the centre of the Roman Republic, then of the Roman Empire, and in the fourth century, became the capital of the Christian world.",
+    }
+  },
   regions: {
     "0": {
       name: "North America",
@@ -819,7 +828,18 @@ var simplemaps_worldmap_mapdata={
       color: "#33FFCC"
     }
   },
-  labels: {},
+  labels: {
+    "0": {
+      name: "Rome",
+      x: 1051,
+      y: 232.7,
+      parent_type: "state",
+      parent_id: "IT",
+      pill: "yes",
+      size: "5",
+      display: "region"
+    }
+  },
   legend: {
     entries: []
   }
