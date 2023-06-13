@@ -3,12 +3,107 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <title>Sites</title>
+  <title>SiteSeeing</title>
   <script src="mapdata.js"></script>
-  <script src="continentmap.js"></script>
+  <script src="worldmap.js"></script>
+  <link rel="icon" type="image/x-icon" href="./icon.png">
+  <style>
+
+    @font-face {
+      font-family: 'Jorick';
+      src: url('./Jorick.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Quattrocento';
+      src: url('./Quattrocento-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Ruda Black';
+      src: url('./Ruda-Black.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #1b27d4;
+      overflow-y: scroll;
+    }
+    
+    .landing-page {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url("./Rome.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 48px;
+      text-align: center;
+      color: #6f131e;
+      font-family: 'Quattrocento', Arial, sans-serif;
+    }
+
+    .background-shape {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1000px;
+      height: 250px;
+      background-color: rgba(237, 232, 222, 0.8);
+    }
+
+    .info-section {
+      background-color: #ffb23e;
+      padding: 10px;
+      font-size: 24px;
+      text-align: center;
+      font-family: 'Quattrocento', Arial, sans-serif;
+    }
+
+    .landing-page h1,
+    .landing-page p {
+      line-height: 0.001;
+    }
+
+    .special-div {
+      font-family: 'Jorick';
+      font-weight: bold;
+      font-size: 150px;
+    }
+
+    .number {
+      font-family: 'Ruda Black';
+    }
+
+    #map {
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Heritage Sites of The World</h1>
+  <div class="landing-page">
+    <div class="background-shape">
+      <h1 class="special-div">SiteSeeing</h1>
+      <p>UNESCO Heritage Sites Around the World</p>
+    </div>
+  </div>
+  <div class="info-section">
+    <h2>About the Website</h2>  
+    <p>This website is created to educate and inform you all on the various heritage sites listed by UNESCO. This website has an added benefit of tracking the additions and changes made by UNESCO so that people can easily know what they are.</p>
+    <h1>Currently, the number of heritage sites listed by UNESCO are:</h1>
+    <h1 class="number">1,157</h1>
+  </div>
   <div id="map"></div>
 </body>
 </html>
